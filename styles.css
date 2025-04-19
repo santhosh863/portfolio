@@ -1,0 +1,97 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+/* styles.css */
+
+/* Navbar container */
+.custom-nav {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Link styling */
+.hover-link {
+  position: relative;
+  color: #1f2937; /* gray-800 */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.hover-link:hover {
+  color: #000;
+}
+
+/* Underline animation */
+.hover-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.hover-link:hover::after {
+  width: 100%;
+}
+
+
+/* Google Forms Container */
+.gform_wrapper {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Form Header */
+.ss-form-title {
+  color: #2d3748 !important; /* Match your h3 color */
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1.5rem !important;
+  text-align: center !important;
+}
+
+/* Questions/Inputs */
+.ss-q-title {
+  color: #4a5568 !important;
+  font-size: 1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.ss-form-control {
+  background: #fff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 0.375rem !important;
+  padding: 0.5rem 0.75rem !important;
+  width: 100% !important;
+}
+
+/* Submit Button */
+.ss-actions {
+  text-align: center !important;
+}
+
+.jfk-button-action {
+  background: #000 !important; /* Match your button color */
+  border: none !important;
+  border-radius: 9999px !important;
+  color: white !important;
+  padding: 0.5rem 1.5rem !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 640px) {
+  .ss-form-container {
+    padding: 0 !important;
+  }
+}
