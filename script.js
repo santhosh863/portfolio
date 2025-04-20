@@ -47,3 +47,10 @@
       alert('Message failed to send. Please try again.');
     });
   });
+
+  document.querySelectorAll('.tool-item').forEach(item => {
+    item.addEventListener('click', function () {
+      const link = this.getAttribute('data-link');
+      window.open(link, '_blank'); // Open the URL in a new tab
+    });
+  });
