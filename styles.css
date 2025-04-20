@@ -96,8 +96,8 @@ html {
   }
 }
 .tool-item {
-  font-size: 1.15rem; /* text-xl */
-  font-weight: 550;
+  font-size: 1.25rem;
+  font-weight: 500;
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -105,11 +105,24 @@ html {
   z-index: 1;
 }
 
-/* Super Glow, Bold, and Pop on Hover */
+/* Default: glow on hover (for desktop) */
 .tool-item:hover {
   color: #ffffff;
-  font-weight: 700; /* bold on hover */
-  transform: scale(1.15); /* pop effect */
+  font-weight: 900;
+  transform: scale(1.15);
+  text-shadow:
+    0 0 5px #6ec1ff,
+    0 0 15px #3498db,
+    0 0 30px #3498db,
+    0 0 50px #85c1e9,
+    0 0 80px #d6eaf8;
+}
+
+/* Glow on click for mobile */
+.tool-item:active {
+  color: #ffffff;
+  font-weight: 900;
+  transform: scale(1.15);
   text-shadow:
     0 0 5px #6ec1ff,
     0 0 15px #3498db,
@@ -127,7 +140,7 @@ html {
   width: 140%;
   height: 140%;
   pointer-events: none;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 1.5%, transparent 40%) center center / 6px 6px repeat;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 1.5%, transparent 40%) center center / 6px 6px repeat;
   opacity: 0.9;
   z-index: -1;
   animation: sparkle-move 2s linear infinite;
@@ -137,4 +150,14 @@ html {
 @keyframes sparkle-move {
   0% { background-position: 0 0; }
   100% { background-position: 100px 100px; }
+}
+
+/* Disable hover effects on touch devices (mobile) */
+@media (hover: none) and (pointer: coarse) {
+  .tool-item:hover {
+    text-shadow: none;
+    transform: none;
+    color: inherit;
+    font-weight: 500;
+  }
 }
