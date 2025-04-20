@@ -6,6 +6,7 @@
   <title>SANTHOSH | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="bg-white text-gray-900 font-sans scroll-smooth">
@@ -47,7 +48,7 @@
        
 </header>
 
- <!-- ✅ HERO SECTION -->
+ <!-- HERO SECTION -->
  <section class="h-screen flex flex-col justify-center items-center text-center px-4 pt-15" id="hero" data-aos="fade-up">
   <h2 class="text-5xl font-bold mb-4" data-aos="fade-right">Hi, I am Santhosh</h2>
   <p class="text-xl text-gray-600 mb-6">I design clean, accessible, and dynamic websites.</p>
@@ -56,7 +57,7 @@
 
 
 
-  <!-- ✅ ABOUT ME SECTION -->
+  <!-- ABOUT ME SECTION -->
   <section id="about" class="max-w-5xl mx-auto py-20 px-6 grid md:grid-cols-2 gap-10 items-center mb-40">
     <img src="assets/images/profile.jpg" alt="Portrait of Your Name" class="rounded-xl shadow-lg w-full h-auto">
     <div>
@@ -66,7 +67,7 @@
     </div>
   </section>
 
-  <!-- ✅ PROJECTS SECTION -->
+  <!-- PROJECTS SECTION -->
 
 <section id="projects" class="bg-gray-50 py-20 px-4 sm:px-6">
   <div class="max-w-6xl mx-auto">
@@ -104,7 +105,7 @@
   </div>
 </section>
 
-  <!-- ✅ SKILLS SECTION -->
+  <!-- SKILLS SECTION -->
   <section class="py-20 px-6 mb-4">
     <div class="max-w-5xl mx-auto text-center">
       <h3 class="text-3xl font-semibold mb-10">Tools & Tech</h3>
@@ -119,8 +120,7 @@
     </div>
   </section>
 
-  <!-- ✅ CONTACT FORM -->
-  <!-- ✅ CONTACT FORM -->
+  <!-- CONTACT FORM -->
   <section id="contact" class="bg-gray-100 py-20 px-6">
     <div class="max-w-xl mx-auto text-center">
       <h3 class="text-3xl font-semibold mb-6">Get In Touch</h3>
@@ -144,62 +144,14 @@
 
 
 
-  <!-- ✅ FOOTER -->
+  <!--FOOTER -->
   <footer class="text-center py-6 text-sm text-gray-500">
-    <p>© 2025 santhosh. built sites you love.</p>
+    <p>© 2025 santhosh. We built sites you love.</p>
   </footer>
+
   <!--AOS JS-->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  </script>
-
-<script>
-  window.onscroll = function () {
-    var header = document.getElementById("header");
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      header.classList.add("py-2");
-      header.classList.remove("py-4");
-    } else {
-      header.classList.add("py-4");
-      header.classList.remove("py-2");
-    }
-  };
-</script>
-
-<script>
-  const hamburger = document.getElementById('hamburger');
-  const mobileNav = document.getElementById('mobile-nav');
-
-  hamburger.addEventListener('click', () => {
-    mobileNav.classList.toggle('hidden');
-  });
-</script>
-
-
-<script>
-  document.getElementById('custom-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const formData = new FormData(this);
-    const formAction = 'https://docs.google.com/forms/d/e/1FAIpQLSeJAesHQtC6ARY8Uf4LWFPhrPTLsbFzVTqhDcaUtmoEbQdlrg/viewform?usp=dialog';
-    
-    fetch(formAction, {
-      method: 'POST',
-      body: formData,
-      mode: 'no-cors'
-    })
-    .then(() => {
-      alert('Message sent successfully!');
-      this.reset();
-    })
-    .catch(() => {
-      alert('Message failed to send. Please try again.');
-    });
-  });
-</script>
+<!--Java script-->
+<script src="script.js"></script>
 </body>
 </html>
