@@ -74,10 +74,10 @@
     });
   });
 
-  ['DOMContentLoaded', 'pageshow'].forEach(evt =>
+  /*['DOMContentLoaded', 'pageshow'].forEach(evt =>
     window.addEventListener(evt, () => {
       document.querySelectorAll('.tool-item.clicked').forEach(item => {
         item.classList.remove('clicked');
       });
     })
-  );
+  );*/
