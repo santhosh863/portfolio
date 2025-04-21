@@ -73,3 +73,8 @@
       }, 300); // glow duration
     });
   });
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.tool-item.clicked').forEach(item => {
+      item.classList.remove('clicked');
+    });
+  });
