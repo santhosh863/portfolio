@@ -118,7 +118,7 @@ html {
     0 0 80px #d6eaf8;
 }
 
-/* Glow on click for mobile */
+/* Glow on click for mobile 
 .tool-item:active {
   color: #ffffff;
   font-weight: 900;
@@ -130,7 +130,8 @@ html {
     0 0 50px #85c1e9,
     0 0 80px #d6eaf8;
 }
-
+    */
+/*
 .tool-item.clicked {
   color: #ffffff;
   font-weight: 900;
@@ -143,6 +144,7 @@ html {
     0 0 50px #85c1e9,
     0 0 80px #d6eaf8;
 }
+*/
 
 /* Sparkle layer */
 .tool-item::after {

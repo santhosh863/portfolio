@@ -49,6 +49,7 @@
   });
 
   //mobile touch glow
+  /*
   document.querySelectorAll('.tool-item').forEach(item => {
     item.addEventListener('click', function (e) {
       e.preventDefault();
