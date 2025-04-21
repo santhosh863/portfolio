@@ -1,0 +1,67 @@
+<!-- project1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>html| Santhosh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-white text-gray-900 font-sans scroll-smooth">
+  <!-- HEADER -->
+<!--HEADER -->
+<header class="fixed top-0 w-full bg-white shadow z-50 transition-all duration-300" id="header">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+  
+   <!--logo--> 
+    <div class="flex items-center space-x-2 -translate-x-2">
+      <img src="assets/images/logo.png" alt="Santhosh Logo" class="h-14 w-14 object-contain" />
+      <span class="text-xl font-bold" style="margin-left: -15px;">anthosh</span>
+    </div>
+
+   <!--DESKTOP NAV--> 
+   <nav class="space-x-6 text-sm font-medium">
+    <a href="index.html#about" class="hover-link">About</a>
+    <a href="index.html#projects" class="hover-link">Projects</a>
+    <a href="index.html#contact" class="hover-link">Contact</a>
+  </nav>
+
+
+  <!--Hamburger ICON (mobile)-->
+  <div class="lg:hidden"> 
+    <button id="hamburger" class="lg:hidden flex flex-col items-center space-y-1">
+      <span class="w-6 h-1 bg-black"></span>
+      <span class="w-6 h-1 bg-black"></span>
+      <span class="w-6 h-1 bg-black"></span>
+    </button> 
+  </div>
+</div>
+
+ <!-- Mobile Nav (Hidden by default) -->
+<div id="mobile-nav" class="hidden lg:hidden bg-white px-4 py-4 space-y-2 text-sm">
+  <a href="index.html#about" class="block">About</a>
+  <a href="index.html#projects" class="block">Projects</a>
+  <a href="index.html#contact" class="block">Contact</a>
+</div>
+     
+</header>
+
+
+  <main class="pt-32 px-6 max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-4">HTML</h1>
+    <img src="assets/images/html founder.jpg" alt="Project Screenshot" class="rounded-lg shadow-lg w-full mb-6">
+    <p class="text-lg text-gray-700">Detailed explanation of the project, what it does, the tools used, and any special features.</p>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 text-sm text-gray-500">
+    <p>© 2025 Santhosh. We build sites you love.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
