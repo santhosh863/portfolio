@@ -70,7 +70,7 @@
           window.open(dataLink, '_blank');
         }
   
-      }, 150); // glow duration
+      }, 10); // glow duration
     });
   });
 
