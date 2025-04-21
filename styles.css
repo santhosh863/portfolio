@@ -131,8 +131,20 @@ html {
     0 0 80px #d6eaf8;
 }
 
+.tool-item.clicked {
+  color: #ffffff;
+  font-weight: 900;
+  transform: scale(1.15);
+  text-shadow:
+    0 0 5px #6ec1ff,
+    0 0 15px #3498db,
+    0 0 30px #3498db,
+    0 0 50px #85c1e9,
+    0 0 80px #d6eaf8;
+}
+
 /* Sparkle layer */
-.tool-item::before {
+.tool-item::after {
   content: '';
   position: absolute;
   top: -20px;
@@ -152,7 +164,7 @@ html {
   100% { background-position: 100px 100px; }
 }
 
-/* Disable hover effects on touch devices (mobile) */
+/* Disable hover effects on touch devices (mobile) 
 @media (hover: none) and (pointer: coarse) {
   .tool-item:hover {
     text-shadow: none;
@@ -161,3 +173,4 @@ html {
     font-weight: 500;
   }
 }
+*/

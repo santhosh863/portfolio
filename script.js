@@ -48,9 +48,28 @@
     });
   });
 
+  //mobile touch glow
   document.querySelectorAll('.tool-item').forEach(item => {
-    item.addEventListener('click', function () {
-      const link = this.getAttribute('data-link');
-      window.open(link, '_blank'); // Open the URL in a new tab
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      item.classList.add('clicked');
+  
+      setTimeout(() => {
+        item.classList.remove('clicked');
+  
+        const href = item.closest('a')?.getAttribute('href');
+        const dataLink = item.getAttribute('data-link');
+  
+        // If it's inside an <a>, go to that page
+        if (href && href !== "#") {
+          window.location.href = href;
+        } 
+        // Or fallback to open the data-link in a new tab
+        else if (dataLink) {
+          window.open(dataLink, '_blank');
+        }
+  
+      }, 300); // glow duration
     });
   });
