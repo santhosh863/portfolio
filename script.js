@@ -70,10 +70,10 @@
           window.open(dataLink, '_blank');
         }
   
-      }, 300); // glow duration
+      }, 150); // glow duration
     });
   });
-  
+
   ['DOMContentLoaded', 'pageshow'].forEach(evt =>
     window.addEventListener(evt, () => {
       document.querySelectorAll('.tool-item.clicked').forEach(item => {
